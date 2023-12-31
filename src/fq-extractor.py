@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Program for extracting the NES rom of Full Quiet in:
 # Full Quiet (Steam)
@@ -8,9 +8,8 @@
 HEADER = [b'\x4E\x45\x53\x1A\x20\x00\x42\x08\x00\x00\x70\x09\x00\x00\x00\x00']
 
 # OFFSET for the game's ROM in the sharedassets4.assets file
-# v2020.3.44.5531  OFFSET     SIZE             OFFSET     SIZE
-OFFSET = [{'PRG': [0x010D80C, 0x80000/
-], 'CHA': None}]
+# v2020.3.44.5531  OFFSET     SIZE       OFFSET     SIZE
+OFFSET = [{'PRG': [0x010D80C, 0x80000], 'CHA': None}]
 
 if __name__ == '__main__':
     # Read in entire .assets file
